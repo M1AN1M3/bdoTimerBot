@@ -1,0 +1,25 @@
+{ "times":
+    [   
+        { "Monday": [
+
+        ]},
+        { "Tuesday": [
+
+        ]},
+        { "Wednesday": [
+
+        ]},
+        { "Thursday": [
+
+        ]},
+        { "Friday": [
+
+        ]},
+        { "Saturday": [
+
+        ]},
+        { "Sunday": [
+            { "tOne": "1600"}
+        ]}
+    ]
+}

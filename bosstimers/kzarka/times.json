@@ -1,0 +1,33 @@
+{ "times":
+    [   
+        { "Monday": [
+            { "tOne": "0500"},
+            { "tTwo": "0900"},
+            { "tThree": "2215"}
+        ]},
+        { "Tuesday": [
+            { "tFour": "0500"}
+        ]},
+        { "Wednesday": [
+            { "tFive": "0015"},
+            { "tSix": "0500"},
+            { "tSeven": "2215"}
+        ]},
+        { "Thursday": [
+            { "tEight": "1600"}
+        ]},
+        { "Friday": [
+            { "tNine": "0015"},
+            { "tTen": "1900"},
+            { "tEleven": "2215"}
+        ]},
+        { "Saturday": [
+            { "tTwelve": "1900"}
+        ]},
+        { "Sunday": [
+            { "tThirteen": "0200"},
+            { "tFourteen": "1200"},
+            { "tFifteen": "2215"}
+        ]}
+    ]
+}
