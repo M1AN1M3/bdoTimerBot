@@ -22,6 +22,8 @@ let spawnTimes = {
         },
 }
 
+let channel = null;
+
 async function bossCommand(client, message, args) {
 	const emptyHeader = "        ";
 	let response = "";
@@ -35,4 +37,22 @@ async function bossCommand(client, message, args) {
 		});
 	});
 	message.channel.send(response);
+	channel = message.channel; // update channel to latest message's channel
 }
+
+function init() {
+	var CronJob = require('cron').CronJob;
+	var job = new CronJob('0 * * * * *', cronJob, null, true, 'Europe/Paris');
+	job.start();
+}
+
+function cronJob() {
+	if (channel) {
+		channel.send('message from cron, one a minute');
+	}
+	else {
+		console.log('cron: channel not set yet')
+	}
+}
+
+init();
